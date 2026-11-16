@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="440" viewBox="0 0 720 440" role="img" aria-labelledby="title desc">
+<title id="title">Time per frame on the camera</title>
+<desc id="desc">Mean time per frame of YOLOv5n and YOLOv5s at each input size, against the number of input pixels. YOLOv5n: 26 ms at 320 x 256 to 150 ms at 960 x 544. YOLOv5s: 69 ms to 464 ms.</desc>
+<style>
+  svg { --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781; --grid: #e1e0d9;
+        --axis: #c3c2b7; --n: #2a78d6; --s: #eb6834; }
+  @media (prefers-color-scheme: dark) {
+    svg { --surface: #1a1a19; --ink: #f0efec; --ink-2: #c3c2b7; --muted: #898781; --grid: #2c2c2a;
+          --axis: #383835; --n: #3987e5; --s: #d95926; }
+  }
+  text { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+  .title { font-size: 16px; font-weight: 600; fill: var(--ink); }
+  .sub { font-size: 12px; fill: var(--ink-2); }
+  .tick { font-size: 11px; fill: var(--muted); }
+  .label { font-size: 12px; fill: var(--ink-2); }
+  .series { font-size: 12px; font-weight: 600; fill: var(--ink); }
+  .grid { stroke: var(--grid); stroke-width: 1; }
+  .axis { stroke: var(--axis); stroke-width: 1; }
+</style>
+<rect width="720" height="440" rx="8" fill="var(--surface)"/>
+<text class="title" x="24" y="28">Time per frame on the camera</text>
+<text class="sub" x="24" y="46">Mean of larod-client runs on an AXIS M4216-V, by number of input pixels. Both orientations of a size are shown.</text>
+<line class="axis" x1="64" x2="608" y1="384.0" y2="384.0"/>
+<text class="tick" x="56" y="388.0" text-anchor="end">0</text>
+<line class="grid" x1="64" x2="608" y1="327.2" y2="327.2"/>
+<text class="tick" x="56" y="331.2" text-anchor="end">100</text>
+<line class="grid" x1="64" x2="608" y1="270.4" y2="270.4"/>
+<text class="tick" x="56" y="274.4" text-anchor="end">200</text>
+<line class="grid" x1="64" x2="608" y1="213.6" y2="213.6"/>
+<text class="tick" x="56" y="217.6" text-anchor="end">300</text>
+<line class="grid" x1="64" x2="608" y1="156.8" y2="156.8"/>
+<text class="tick" x="56" y="160.8" text-anchor="end">400</text>
+<line class="grid" x1="64" x2="608" y1="100.0" y2="100.0"/>
+<text class="tick" x="56" y="104.0" text-anchor="end">500</text>
+<text class="tick" x="56" y="90" text-anchor="end">ms</text>
+<line class="axis" x1="162.9" x2="162.9" y1="384" y2="388"/>
+<text class="tick" x="162.9" y="402" text-anchor="middle">0.1</text>
+<line class="axis" x1="261.8" x2="261.8" y1="384" y2="388"/>
+<text class="tick" x="261.8" y="402" text-anchor="middle">0.2</text>
+<line class="axis" x1="360.7" x2="360.7" y1="384" y2="388"/>
+<text class="tick" x="360.7" y="402" text-anchor="middle">0.3</text>
+<line class="axis" x1="459.6" x2="459.6" y1="384" y2="388"/>
+<text class="tick" x="459.6" y="402" text-anchor="middle">0.4</text>
+<line class="axis" x1="558.5" x2="558.5" y1="384" y2="388"/>
+<text class="tick" x="558.5" y="402" text-anchor="middle">0.5</text>
+<text class="tick" x="336.0" y="426" text-anchor="middle">input size (million pixels)</text>
+<polyline points="145.0,341.4 165.3,327.8 235.2,298.8 307.1,272.7 367.8,246.8 469.1,199.4 580.5,140.6" fill="none" stroke="var(--s)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="145.0" cy="344.8" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 320 x 256: 69 ms</title></circle>
+<circle cx="145.0" cy="338.0" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 256 x 320: 81 ms</title></circle>
+<circle cx="165.3" cy="327.8" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 320 x 320: 99 ms</title></circle>
+<circle cx="235.2" cy="298.8" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 416 x 416: 150 ms</title></circle>
+<circle cx="307.1" cy="272.7" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 384 x 640: 196 ms</title></circle>
+<circle cx="367.8" cy="247.7" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 640 x 480: 240 ms</title></circle>
+<circle cx="367.8" cy="246.0" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 480 x 640: 243 ms</title></circle>
+<circle cx="469.1" cy="199.4" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 640 x 640: 325 ms</title></circle>
+<circle cx="580.5" cy="160.8" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 544 x 960: 393 ms</title></circle>
+<circle cx="580.5" cy="120.4" r="4.5" fill="var(--s)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5s 960 x 544: 464 ms</title></circle>
+<text class="series" x="592.5" y="144.6">YOLOv5s</text>
+<polyline points="145.0,368.4 165.3,364.1 186.6,360.7 209.8,358.4 235.2,353.9 262.5,350.5 291.9,346.5 307.1,344.2 367.8,334.6 469.1,318.1 580.5,304.8" fill="none" stroke="var(--n)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="145.0" cy="369.2" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 320 x 256: 26 ms</title></circle>
+<circle cx="145.0" cy="367.5" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 256 x 320: 29 ms</title></circle>
+<circle cx="165.3" cy="364.1" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 320 x 320: 35 ms</title></circle>
+<circle cx="186.6" cy="360.7" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 352 x 352: 41 ms</title></circle>
+<circle cx="209.8" cy="358.4" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 384 x 384: 45 ms</title></circle>
+<circle cx="235.2" cy="353.9" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 416 x 416: 53 ms</title></circle>
+<circle cx="262.5" cy="350.5" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 448 x 448: 59 ms</title></circle>
+<circle cx="291.9" cy="346.5" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 480 x 480: 66 ms</title></circle>
+<circle cx="307.1" cy="344.2" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 384 x 640: 70 ms</title></circle>
+<circle cx="367.8" cy="335.2" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 640 x 480: 86 ms</title></circle>
+<circle cx="367.8" cy="334.0" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 480 x 640: 88 ms</title></circle>
+<circle cx="469.1" cy="318.1" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 640 x 640: 116 ms</title></circle>
+<circle cx="580.5" cy="310.7" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 544 x 960: 129 ms</title></circle>
+<circle cx="580.5" cy="298.8" r="4.5" fill="var(--n)" stroke="var(--surface)" stroke-width="2"><title>YOLOv5n 960 x 544: 150 ms</title></circle>
+<text class="series" x="592.5" y="308.8">YOLOv5n</text>
+<text class="label" x="459.1" y="306.1" text-anchor="end">640 x 640: 116 ms</text>
+<text class="label" x="481.1" y="217.4" text-anchor="start">640 x 640: 325 ms</text>
+<circle cx="29" cy="66" r="5" fill="var(--n)"/>
+<text class="label" x="40" y="70">YOLOv5n</text>
+<circle cx="125" cy="66" r="5" fill="var(--s)"/>
+<text class="label" x="136" y="70">YOLOv5s</text>
+</svg>
